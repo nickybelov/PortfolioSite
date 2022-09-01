@@ -1,0 +1,20 @@
+// Variables
+
+$font-stack: 'Dosis', sans-serif;
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase.jpg');
+
+
+// Set Text Color
+@function set-text-color($bg-color) {
+    @if(lightness($bg-color) > 50) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
